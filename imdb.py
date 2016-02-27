@@ -1,10 +1,10 @@
-"""Script to gather IMDB keywords from 2013's top grossing movies."""
+"""Script to gather IMDB keywords from 2015's top grossing movies."""
 import sys
 import requests
 from bs4 import BeautifulSoup
 import csv
 
-URL = "http://www.imdb.com/search/title?at=0&sort=boxoffice_gross_us,desc&start=1&year=2013,2013"
+URL = "http://www.imdb.com/search/title?at=0&sort=boxoffice_gross_us,desc&start=1&year=2015,2015"
 
 def get_top_grossing_movie_links(url):
     """Return a list of tuples containing the top grossing movies of 2013 and link to their IMDB
